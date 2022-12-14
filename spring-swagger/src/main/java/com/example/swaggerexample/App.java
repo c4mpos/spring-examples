@@ -17,7 +17,7 @@ public class App {
 		SpringApplication.run(App.class, args);
 	}
 
-	@GetMapping("/dashboard")
+	@GetMapping("/")
 	public ResponseEntity<Object> index() {
 		return ResponseEntity.status(HttpStatus.OK).body(new HashMap<String, String>() {
 			{
